@@ -1,17 +1,14 @@
 vengeful-goomba README:
 
+7/4/12
+This is the first time I've looked at this project in a while.  I had been
+experimenting with it and some things were out of place or undefined, so I 
+fixed that and got the game back to a playable state.  I moved all the 
+classes into their own separate header files and included them.
+
 TODO list:
  - use virtual functions in cCollider class
- - make pointer to sprite a class member of cCollider
+ - make cMover class for colliders that need to calculate movement
+ - make sprite (or pointer to sprite) a class member of cCollider/cMover
  - make movement smoother
- - make constructors set sprite coordinates
-
-7/4/12
-This is the first time I've looked at this project in a while.  I had 
-experimented with it and some things were out of place or undefined, so I 
-went in and fixed that and got the game back to a playable state:
-
-- I made all the classes into separate header files
-- I added a cMover class to differentiate between colliders that need to
-calculate movement
-- removed old todo's
+ - make constructors set sprite rect coordinates
